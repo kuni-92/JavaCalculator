@@ -1,6 +1,6 @@
 package lib;
 
-public class Animal {
+public abstract class Animal {
 	
 	public String name;
 	
@@ -8,11 +8,7 @@ public class Animal {
 		this.name = name;
 	}
 
-	public void bark(String sound) {
-		System.out.println(name + " : " + sound);
-	}
-	
-	public void walk() {
-		System.out.println(name + " : " + "walking.");
-	}
+	public abstract void bark(String sound);
+
+	public abstract void walk();
 }
